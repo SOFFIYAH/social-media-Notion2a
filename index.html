@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Social Media 2 light mode</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<style>
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+	background-color: rgb(0, 0, 0, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    margin-top: 120px;
+}
+
+.toggle{
+    padding-bottom:20px ;
+    gap: 8px;
+    position: relative;
+}
+
+.tg{
+    padding: 8px;
+    border-radius: 100px;
+    border:none;
+    cursor: pointer;
+}
+.tg:hover{
+    border: 2px solid #fff;
+    padding: 10px;
+}
+
+.rad{
+    padding: 5px;
+    margin-left: 380px;
+    border-radius: 0px;
+    border:2px solid #443F3C;
+    background: none;
+    cursor: pointer;
+}
+.rid{
+    padding: 8px;
+    margin-left: 10px;
+    border-radius: 100px;
+    border:2px solid #443F3C;
+    background: none;
+    cursor: pointer;
+}
+
+a{
+    color:#35CEC9;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px;
+    padding-bottom: 0px;
+    position: absolute;
+}
+
+#tgi{
+    background: #35CEC9;
+    padding: 15px;
+}
+#tgii{
+    background: #443F3C;
+}
+#tgiii{
+    background: #B0F3D4;
+}
+#tgiv{
+    background: #FFE3B3;
+}
+
+.wrap{
+    display: flex;
+    gap: 20px;
+}
+
+.fa-brands, .fa-solid{
+    color: #FFF7EC;
+    background-color:#35CEC9 ;
+    
+    padding:10px;
+    border-radius: 100px;
+    font-size: 20px;
+}
+
+
+i:hover{
+    background-color: rgb(255, 255, 255, 0%);
+    color: #35CEC9;
+    
+    cursor: pointer;
+
+}
+
+
+	</style>
+<body>
+	<div class="main">
+<div class="toggle">
+	<button onclick="chnge(this.id)" class="tg" id="tgi"></button>
+	<button onclick="chnge(this.id)" class="tg" id="tgii"></button>
+	<button onclick="chnge(this.id)" class="tg" id="tgiii"></button>
+	<button onclick="chnge(this.id)" class="tg" id="tgiv"></button>
+	<button onclick="shp(this.id)" class="rad" id="rad"></button>
+	<button onclick="sht(this.id)" class="rid" id="rid"></button>
+
+	</div>
+
+	<div class="wrap">
+
+		<!-- FACEBOOK -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="fb" class="fa-brands fa-facebook"></i>
+			</span>
+		</div>
+
+		<!-- INSTAGRAM -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="inst" class="fa-brands fa-instagram"></i>
+			</span>
+		</div>
+
+		<!-- YOUTUBE -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="yt" class="fa-brands fa-youtube"></i>
+			</span>
+		</div>
+
+		<!-- TIKTOK -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="tt" class="fa-brands fa-tiktok"></i>
+			</span>
+		</div>
+
+
+		<!-- TWITTER -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="txt" class="fa-brands fa-twitter"></i>
+			</span>
+		</div>
+
+		<!-- TWITCH -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="twt" class="fa-brands fa-twitch"></i>
+			</span>
+		</div>
+
+		<!-- PINTEREST -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="pnt" class="fa-brands fa-pinterest"></i>
+			</span>
+		</div>
+
+		<!-- LINKEDIN -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="lik" class="fa-solid fa-link"></i>
+			</span>
+		</div>
+
+		<!-- REDDIT -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="rdt" class="fa-brands fa-reddit-alien"></i>
+			</span>
+		</div>
+
+
+		<!-- EMAIL -->
+
+		<div class="icon">
+			<span class="bg">
+				<i onclick="move(this.id)" id="eml" class="fa-solid fa-envelope"></i>
+			</span>
+		</div>
+
+
+
+	</div>
+
+	<script type="text/javascript">
+		function chnge(id){
+
+
+    if(id=="tgii"){
+        document.getElementById("tgii").style.padding="15px"
+        document.getElementById("tgi").style.padding="8px"
+        document.getElementById("tgiii").style.padding="8px"
+        document.getElementById("tgiv").style.padding="8px" 
+
+        document.getElementById("inst").style.backgroundColor="#443F3C"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#443F3C"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#443F3C"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#443F3C"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#443F3C"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#443F3C"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#443F3C"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#443F3C"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#443F3C"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#443F3C"        
+        document.getElementById("fb").style.color="#FFF7EC" 
+       
+
+        let btn=document.querySelectorAll("i");
+       
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#443F3C"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#443F3C"
+    }
+   
+    
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    
+    
+    }
+    
+     else if(id=="tgiii"){
+        document.getElementById("tgiii").style.padding="15px"
+        document.getElementById("tgii").style.padding="8px"
+        document.getElementById("tgi").style.padding="8px"
+        document.getElementById("tgiv").style.padding="8px"
+
+        document.getElementById("inst").style.backgroundColor="#B0F3D4"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#B0F3D4"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#B0F3D4"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#B0F3D4"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#B0F3D4"        
+        document.getElementById("fb").style.color="#FFF7EC" 
+    
+
+        let btn=document.querySelectorAll("i");
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#B0F3D4"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#B0F3D4"
+    }
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    }
+    
+    else if(id=="tgiv"){
+        document.getElementById("tgiii").style.padding="8px"
+        document.getElementById("tgii").style.padding="8px"
+        document.getElementById("tgi").style.padding="8px"
+        document.getElementById("tgiv").style.padding="15px"
+
+        document.getElementById("inst").style.backgroundColor="#FFE3B3"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#FFE3B3"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#FFE3B3"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#FFE3B3"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#FFE3B3"        
+        document.getElementById("fb").style.color="#FFF7EC" 
+       
+
+        let btn=document.querySelectorAll("i");
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#FFE3B3"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#FFE3B3"
+    }
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    }
+    
+    else if(id=="tgi"){
+        document.getElementById("tgiii").style.padding="8px"
+        document.getElementById("tgii").style.padding="8px"
+        document.getElementById("tgi").style.padding="15px"
+        document.getElementById("tgiv").style.padding="8px"
+
+        document.getElementById("inst").style.backgroundColor="#35CEC9"        
+        document.getElementById("inst").style.color="#FFF7EC" 
+        document.getElementById("yt").style.backgroundColor="#35CEC9"        
+        document.getElementById("yt").style.color="#FFF7EC" 
+        document.getElementById("tt").style.backgroundColor="#35CEC9"        
+        document.getElementById("tt").style.color="#FFF7EC" 
+        document.getElementById("txt").style.backgroundColor="#35CEC9"        
+        document.getElementById("txt").style.color="#FFF7EC" 
+        document.getElementById("twt").style.backgroundColor="#35CEC9"        
+        document.getElementById("twt").style.color="#FFF7EC" 
+        document.getElementById("pnt").style.backgroundColor="#35CEC9"        
+        document.getElementById("pnt").style.color="#FFF7EC" 
+        document.getElementById("lik").style.backgroundColor="#35CEC9"        
+        document.getElementById("lik").style.color="#FFF7EC" 
+        document.getElementById("rdt").style.backgroundColor="#35CEC9"        
+        document.getElementById("rdt").style.color="#FFF7EC" 
+        document.getElementById("eml").style.backgroundColor="#35CEC9"        
+        document.getElementById("eml").style.color="#FFF7EC" 
+        document.getElementById("fb").style.backgroundColor="#35CEC9"        
+        document.getElementById("fb").style.color="#FFF7EC"
+       
+
+        let btn=document.querySelectorAll("i");
+     
+    
+       function blk(e){
+        let btn=e.target
+        btn.style.backgroundColor="#35CEC9"
+        btn.style.color="#FFF7EC"
+    }
+    
+    function blck(e){
+        let btn=e.target
+        btn.style.backgroundColor="rgb(255, 255, 255, 0%)"
+        btn.style.color="#FFF7EC"
+    }
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseover",blck)
+        
+    });
+    
+    btn.forEach(btn => {
+        btn.addEventListener("mouseout",blk)
+        
+    });
+    
+    }
+    
+    }
+    
+    function shp(id){
+    document.getElementById("rad").style.padding="8px"
+    document.getElementById("rid").style.padding="5px"
+    document.getElementById("fb").style.borderRadius="0px"
+    document.getElementById("inst").style.borderRadius="0px"
+    document.getElementById("yt").style.borderRadius="0px"
+    document.getElementById("tt").style.borderRadius="0px"
+    document.getElementById("txt").style.borderRadius="0px"
+    document.getElementById("twt").style.borderRadius="0px"
+    document.getElementById("pnt").style.borderRadius="0px"
+    document.getElementById("lik").style.borderRadius="0px"
+    document.getElementById("rdt").style.borderRadius="0px"
+    document.getElementById("eml").style.borderRadius="0px"
+    
+    
+    
+    
+    }
+    
+    
+    function sht(id){
+    document.getElementById("rid").style.padding="8px"
+    document.getElementById("rad").style.padding="5px"
+    document.getElementById("fb").style.borderRadius="100px"
+    document.getElementById("inst").style.borderRadius="100px"
+    document.getElementById("yt").style.borderRadius="100px"
+    document.getElementById("tt").style.borderRadius="100px"
+    document.getElementById("txt").style.borderRadius="100px"
+    document.getElementById("twt").style.borderRadius="100px"
+    document.getElementById("pnt").style.borderRadius="100px"
+    document.getElementById("lik").style.borderRadius="100px"
+    document.getElementById("rdt").style.borderRadius="100px"
+    document.getElementById("eml").style.borderRadius="100px"
+    
+    
+    
+    
+    }
+    
+    function move(id){
+    
+    
+        if(id=="fb"){
+        console.log("test me")
+        window.open("link here").focus()
+    }
+    
+    
+    else if(id=="inst"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="yt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="tt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="txt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="twt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="pnt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="lik"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="rdt"){
+        window.open("link here").focus()
+    }
+    
+    else if(id=="eml"){
+        window.open("link here").focus()
+    }
+    
+    
+    
+    }
+    
+    
+	</script>
+</div>
+</body>
+</html>
